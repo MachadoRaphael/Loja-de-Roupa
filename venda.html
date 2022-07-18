@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Lojinha</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+	<img class="cabecalho-imagem" src="logo.png">
+	<nav class="cabecalho-menu">
+		<a class="cabecalho-menu-item" href="index.html">Página Inicial</a>
+		<a class="cabecalho-menu-item" href="venda.html">Realizar Venda</a>
+		<a class="cabecalho-menu-item" href="tabela.html">Tabela de Preços</a>
+	</nav>
+</header>
+
+<main class="conteudo">
+	<h3 class="conteudo-principal-escrito-subtitulo">- Para realizar a venda, basta inserir o TAMANHO e a QUANTIDADE:</h3>
+
+	<section class="conteudo-principal">
+		<div>
+			<form>
+				<h3 class="conteudo-principal-escrito-subtitulo">Blusa:</h2>
+				<ul>
+					<li class="li">
+						<input type="radio" id="tamanhoPblusa" name="blusas">
+						<label for="tamanhoPblusa">Tamanho P</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoMblusa" name="blusas">
+						<label for="tamanhoMblusa">Tamanho M</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoGblusa" name="blusas">
+						<label for="tamanhoGblusa">Tamanho G</label>
+					</li>
+				</ul>
+			</form>
+
+			<section>
+				<button class="btn" id="vendasblusa">Inserir</button>
+			    <button class="btn" id="estornoblusa">Estornar</button>
+			</section>
+			
+			<table class="conteudo-principal-escrito-tabela" id="table1">
+				<tr>
+					<th>Tamanho</th>
+					<th>Quantidade</th>
+					<th>Valores</th>
+				</tr>
+				<tr>
+					<td>Tamanho P</td>
+					<td id="resultadoPblusa"></td>
+					<td id="vendaPblusa"></td>
+				</tr>
+				<tr>
+					<td>Tamanho M</td>
+					<td id="resultadoMblusa"></td>
+					<td id="vendaMblusa"></td>
+				</tr>
+				<tr>
+					<td>Tamanho G</td>
+					<td id="resultadoGblusa"></td>
+					<td id="vendaGblusa"></td>
+				</tr>
+			</table>
+		
+		</div>
+
+		<div>
+			<form>
+				<h3 class="conteudo-principal-escrito-subtitulo">Casaco:</h2>
+				<ul>
+					<li class="li">
+						<input type="radio" id="tamanhoPcasaco" name="blusas">
+						<label for="tamanhoPcasaco">Tamanho P</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoMcasaco" name="blusas">
+						<label for="tamanhoMcasaco">Tamanho M</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoGcasaco" name="blusas">
+						<label for="tamanhoGcasaco">Tamanho G</label>
+					</li>
+				</ul>
+			</form>
+
+			<section>
+				<button class="btn" id="vendascasaco">Inserir</button>
+				<button class="btn" id="estornocasaco">Estornar</button>
+			</section>
+
+			<table class="conteudo-principal-escrito-tabela" id="table2">
+				<tr>
+					<th>Tamanho</th>
+					<th>Quantidade</th>
+					<th>Valores</th>
+				</tr>
+				<tr>
+					<td>Tamanho P</td>
+					<td id="resultadoPcasaco"></td>
+					<td id="vendaPcasaco"></td>
+				</tr>
+				<tr>
+					<td>Tamanho M</td>
+					<td id="resultadoMcasaco"></td>
+					<td id="vendaMcasaco"></td>
+				</tr>
+				<tr>
+					<td>Tamanho G</td>
+					<td id="resultadoGcasaco"></td>
+					<td id="vendaGcasaco"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div>
+			<form>
+				<h3 class="conteudo-principal-escrito-subtitulo">Calça:</h2>
+				<ul>
+					<li class="li">
+						<input type="radio" id="tamanhoPcalca" name="blusas">
+						<label for="tamanhoPcalca">Tamanho 36-38</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoMcalca" name="blusas">
+						<label for="tamanhoMcalca">Tamanho 40-48</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoGcalca" name="blusas">
+						<label for="tamanhoGcalca">Tamanho 50-52</label>
+					</li class="li">
+				</ul>
+			</form>
+
+				<section>
+					<button class="btn" id="vendascalca">Inserir</button>
+					<button class="btn" id="estornocalca">Estornar</button>
+				</section>
+
+				<table class="conteudo-principal-escrito-tabela" id="table3">
+					<tr>
+						<th>Tamanho</th>
+						<th>Quantidade</th>
+						<th>Valores</th>
+					</tr>
+					<tr>
+						<td>Tamanho 36-38</td>
+						<td id="resultadoPcalca"></td>
+						<td id="vendaPcalca"></td>
+					</tr>
+					<tr>
+						<td>Tamanho 40-48</td>
+						<td id="resultadoMcalca"></td>
+						<td id="vendaMcalca"></td>
+					</tr>
+					<tr>
+						<td>Tamanho 50-52</td>
+						<td id="resultadoGcalca"></td>
+						<td id="vendaGcalca"></td>
+					</tr>
+				</table>
+		</div>
+
+		<div>
+			<form>
+				<h3 class="conteudo-principal-escrito-subtitulo">Bermuda:</h2>
+				<ul>
+					<li class="li">
+						<input type="radio" id="tamanhoPbermuda" name="blusas">
+						<label for="tamanhoPbermuda">Tamanho 36-38</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoMbermuda" name="blusas">
+						<label for="tamanhoMbermuda">Tamanho 40-48</label>
+					</li>
+					<li class="li">
+						<input type="radio" id="tamanhoGbermuda" name="blusas">
+						<label for="tamanhoGbermuda">Tamanho 50-52</label>
+					</li>
+				</ul>
+			</form>
+
+			<section>
+				<button class="btn" id="vendasbermuda">Inserir</button>
+				<button class="btn" id="estornobermuda">Estornar</button>
+			</section>
+
+			<table class="conteudo-principal-escrito-tabela" id="table4">
+				<tr>
+					<th>Tamanho</th>
+					<th>Quantidade</th>
+					<th>Valores</th>
+				</tr>
+				<tr>
+					<td>Tamanho 36-38</td>
+					<td id="resultadoPbermuda"></td>
+					<td id="vendaPbermuda"></td>
+				</tr>
+				<tr>
+					<td>Tamanho 40-48</td>
+					<td id="resultadoMbermuda"></td>
+					<td id="vendaMbermuda"></td>
+				</tr>
+				<tr>
+					<td>Tamanho 50-52</td>
+					<td id="resultadoGbermuda"></td>
+					<td id="vendaGbermuda"></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<section class="conteudo-secundario">
+		<button class="btn" id="export">Planilha</button>
+		<a href="venda.html" class="btn">Atualizar</a>
+	</section>
+</main>
+
+<footer class="rodape">
+	<img class="rodape-imagem" src="logo.png">
+</footer>
+	<script src="tableToExcel.js"></script>
+	<script src="javascript.js"></script>
+</body>
+</html>
